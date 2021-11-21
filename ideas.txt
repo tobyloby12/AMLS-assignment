@@ -1,3 +1,5 @@
+TODO:
+create test and train so that we can compare models
 Things to try:
 
 Feature selection and dimensionality reduction -> clustering
@@ -12,7 +14,7 @@ LBP
 Gabor
 SIFT
 
-
+Find a way to select features after extraction
 
 SVM classification
 Experiment with different feature selection methods
