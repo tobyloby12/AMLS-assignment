@@ -3,8 +3,6 @@ scipy
 matplotlib
 pandas
 sklearn
-tensorflow
-keras
-torch
 opencv-python
 scikit-image
+ipykernal
