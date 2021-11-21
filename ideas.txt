@@ -24,3 +24,10 @@ Random forest
 
 Deep learning models
 SSD
+
+
+
+performances interim multiclass:
+HOG+LBP+PCA+SVM: 0.8933
+HOG+PCA+SVM: 0.8944
+LBP+PCA+SVM: 0.5344
