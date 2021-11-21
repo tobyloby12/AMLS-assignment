@@ -23,8 +23,8 @@ train = df.sample(frac=0.7, random_state=rng)
 test = df.loc[~df.index.isin(train.index)]
 
 # creating csv file for each and putting images in correct folder
-train.to_csv(os.path.join(dataset_path, 'train.csv'))
-test.to_csv(os.path.join(dataset_path, 'test.csv'))
+train.to_csv(os.path.join(dataset_path, 'train.csv'), index=False)
+test.to_csv(os.path.join(dataset_path, 'test.csv'), index=False)
 
 for row in train.iterrows():
     image_path = os.path.join(dataset_path, f'image/{row[1][0]}')
