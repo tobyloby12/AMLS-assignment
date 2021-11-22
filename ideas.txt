@@ -31,3 +31,4 @@ performances interim multiclass:
 HOG+LBP+PCA+SVM: 0.8933
 HOG+PCA+SVM: 0.8944
 LBP+PCA+SVM: 0.5344
+LBP+PCA+randomForest: 0.8166
