@@ -19,19 +19,25 @@ Find a way to select features after extraction
 SVM classification
 Experiment with different feature selection methods
 
-Random forest
+Data augmentation on medical images - https://towardsdatascience.com/data-augmentation-in-medical-images-95c774e6eaae
 
+precisiona and recall - https://www.analyticsvidhya.com/blog/2020/09/precision-recall-machine-learning/
 
 Deep learning models
-SSD
+
 
 
 
 performances interim multiclass:
-HOG+LBP+PCA+SVM: 0.8933
-HOG+PCA+SVM: 0.8944
+HOG+LBP+PCA+SVM: 0.89
+HOG+PCA+SVM: 0.8844
 LBP+PCA+SVM: 0.5344
 LBP+PCA+randomForest: 0.8166
 GABOR+PCA+SVM: 0.7866
-HOG+GABOR+PCA+SVM: 0.8733
+HOG+GABOR+PCA+SVM: 0.8788
 HOG+GABOR+LBP+PCA+SVM: 0.8766
+HOG+GABOR+PCA+SVM: 0.8744
+
+performance binary:
+HOG+GABOR+PCA+SVM: 0.8755
+HOG+PCA+SVM: 0.8778
