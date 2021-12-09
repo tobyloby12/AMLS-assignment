@@ -12,7 +12,7 @@ features/
 
 # models
 *.sav
-*.npy
+
 
 # Distribution / packaging
 .Python
