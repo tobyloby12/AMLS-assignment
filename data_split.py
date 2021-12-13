@@ -2,6 +2,7 @@ import os
 from numpy.random import RandomState
 import pandas as pd
 from shutil import copy2
+import shutil
 
 # getting path to data
 path = os.getcwd()
@@ -9,7 +10,18 @@ dataset_path = os.path.join(path, 'dataset')
 data_path = os.path.join(path, 'dataset/label.csv')
 
 df = pd.read_csv(os.path.join(path, 'dataset/label.csv'))
+# df2 = pd.read_csv(os.path.join(path, 'dataset/aug_label.csv'))
 
+# df.columns = ['Name', 'Label']
+# df2.columns = ['Name', 'Label']
+# df = df.append(df2, ignore_index=True)
+try:
+    shutil.rmtree(os.path.join(dataset_path, 'train'))
+    shutil.rmtree(os.path.join(dataset_path, 'test'))
+except OSError as e:
+    print("Error: %s - %s." % (e.filename, e.strerror))
+
+print(df)
 # creating test and train directories
 try:
     os.mkdir(os.path.join(dataset_path, 'train'))
@@ -21,6 +33,7 @@ except:
 rng = RandomState()
 train = df.sample(frac=0.7, random_state=rng)
 test = df.loc[~df.index.isin(train.index)]
+print(test.shape)
 
 # creating csv file for each and putting images in correct folder
 train.to_csv(os.path.join(dataset_path, 'train.csv'), index=False)
