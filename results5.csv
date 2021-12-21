@@ -1,0 +1,43 @@
+Classifier,Augmented,Features,PCA,Classifier_Metrics,Val accuracy,Test accuracy,f1 no_tumor,f1 tumor
+svm,False,"('hog',)",PCA(n_components=0.95),"SVC(C=10, gamma=0.001)",0.9322222222222222,0.915,0.8721804511278195,0.9363295880149815
+svm,False,"('wavelet_3x',)",PCA(n_components=0.99),"SVC(C=10, gamma=0.001)",0.9222222222222223,0.9,0.8484848484848485,0.9253731343283583
+svm,False,"('wavelet_2x',)",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9244444444444444,0.91,0.8548387096774193,0.9347826086956522
+svm,False,"('hog', 'wavelet_3x')",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9544444444444444,0.92,0.8787878787878787,0.9402985074626866
+svm,False,"('hog', 'wavelet_2x')",PCA(n_components=0.99),"SVC(C=10, gamma=0.0001)",0.9388888888888889,0.92,0.8769230769230769,0.9407407407407408
+svm,False,"('wavelet_3x', 'wavelet_2x')",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9233333333333333,0.915,0.864,0.9381818181818181
+svm,False,"('hog', 'wavelet_3x', 'wavelet_2x')",PCA(n_components=0.99),"SVC(C=10, gamma=0.0001)",0.9422222222222222,0.915,0.8702290076335878,0.9368029739776952
+random forest,False,"('hog',)",PCA(n_components=50),RandomForestClassifier(),0.8944444444444445,0.86,0.7543859649122806,0.902097902097902
+random forest,False,"('wavelet_3x',)",PCA(n_components=50),RandomForestClassifier(n_estimators=200),0.8611111111111112,0.835,0.6857142857142857,0.888135593220339
+random forest,False,"('wavelet_2x',)",PCA(n_components=50),RandomForestClassifier(n_estimators=50),0.8522222222222222,0.835,0.6915887850467289,0.8873720136518771
+random forest,False,"('hog', 'wavelet_3x')",PCA(n_components=50),RandomForestClassifier(n_estimators=200),0.9011111111111111,0.865,0.7692307692307692,0.9045936395759717
+random forest,False,"('hog', 'wavelet_2x')",PCA(n_components=50),RandomForestClassifier(),0.8777777777777778,0.86,0.75,0.9027777777777777
+random forest,False,"('wavelet_3x', 'wavelet_2x')",PCA(n_components=50),RandomForestClassifier(n_estimators=200),0.8633333333333333,0.835,0.6796116504854368,0.888888888888889
+random forest,False,"('hog', 'wavelet_3x', 'wavelet_2x')",PCA(n_components=50),RandomForestClassifier(n_estimators=200),0.89,0.865,0.7522935779816513,0.9072164948453608
+knn,False,"('hog',)",PCA(n_components=0.99),KNeighborsClassifier(n_neighbors=1),0.9511111111111111,0.935,0.9007633587786259,0.9516728624535317
+knn,False,"('wavelet_3x',)",PCA(n_components=0.99),KNeighborsClassifier(n_neighbors=1),0.9311111111111111,0.895,0.8292682926829268,0.924187725631769
+knn,False,"('wavelet_2x',)",PCA(n_components=0.9),KNeighborsClassifier(n_neighbors=3),0.8655555555555555,0.84,0.7333333333333334,0.8857142857142858
+knn,False,"('hog', 'wavelet_3x')",PCA(n_components=0.99),KNeighborsClassifier(n_neighbors=1),0.9566666666666667,0.91,0.8656716417910447,0.9323308270676692
+knn,False,"('hog', 'wavelet_2x')",PCA(n_components=100),KNeighborsClassifier(n_neighbors=1),0.9377777777777778,0.89,0.819672131147541,0.920863309352518
+knn,False,"('wavelet_3x', 'wavelet_2x')",PCA(n_components=50),KNeighborsClassifier(n_neighbors=1),0.9233333333333333,0.9,0.8387096774193549,0.927536231884058
+knn,False,"('hog', 'wavelet_3x', 'wavelet_2x')",PCA(n_components=0.9),KNeighborsClassifier(n_neighbors=1),0.95,0.88,0.8095238095238094,0.9124087591240875
+svm,True,"('hog',)",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9288888888888889,0.91,0.859375,0.9338235294117646
+svm,True,"('wavelet_3x',)",PCA(n_components=50),"SVC(C=10, gamma=0.01)",0.9088888888888889,0.905,0.8403361344537814,0.9323843416370107
+svm,True,"('wavelet_2x',)",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9222222222222223,0.915,0.864,0.9381818181818181
+svm,True,"('hog', 'wavelet_3x')",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9533333333333334,0.92,0.8769230769230769,0.9407407407407408
+svm,True,"('hog', 'wavelet_2x')",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9422222222222222,0.94,0.90625,0.9558823529411765
+svm,True,"('wavelet_3x', 'wavelet_2x')",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9177777777777778,0.92,0.8709677419354839,0.9420289855072465
+svm,True,"('hog', 'wavelet_3x', 'wavelet_2x')",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.9366666666666666,0.935,0.8976377952755905,0.9523809523809523
+random forest,True,"('hog',)",PCA(n_components=100),RandomForestClassifier(n_estimators=50),0.8488888888888889,0.8,0.5918367346938775,0.8675496688741722
+random forest,True,"('wavelet_3x',)",PCA(n_components=50),RandomForestClassifier(n_estimators=50),0.8466666666666667,0.79,0.5624999999999999,0.861842105263158
+random forest,True,"('wavelet_2x',)",PCA(n_components=50),RandomForestClassifier(n_estimators=200),0.8444444444444444,0.805,0.5979381443298969,0.8712871287128713
+random forest,True,"('hog', 'wavelet_3x')",PCA(n_components=50),RandomForestClassifier(n_estimators=50),0.8888888888888888,0.88,0.7931034482758621,0.9154929577464789
+random forest,True,"('hog', 'wavelet_2x')",PCA(n_components=50),RandomForestClassifier(n_estimators=200),0.8755555555555555,0.835,0.6857142857142857,0.888135593220339
+random forest,True,"('wavelet_3x', 'wavelet_2x')",PCA(n_components=50),RandomForestClassifier(),0.8455555555555555,0.805,0.5979381443298969,0.8712871287128713
+random forest,True,"('hog', 'wavelet_3x', 'wavelet_2x')",PCA(n_components=50),RandomForestClassifier(),0.8733333333333333,0.825,0.6534653465346535,0.882943143812709
+knn,True,"('hog',)",PCA(n_components=0.9),KNeighborsClassifier(n_neighbors=1),0.96,0.935,0.9022556390977443,0.951310861423221
+knn,True,"('wavelet_3x',)",PCA(n_components=50),KNeighborsClassifier(n_neighbors=3),0.8688888888888889,0.86,0.7543859649122806,0.902097902097902
+knn,True,"('wavelet_2x',)",PCA(n_components=0.99),KNeighborsClassifier(n_neighbors=1),0.9277777777777778,0.86,0.7741935483870968,0.8985507246376813
+knn,True,"('hog', 'wavelet_3x')",PCA(n_components=0.99),KNeighborsClassifier(n_neighbors=1),0.9577777777777777,0.905,0.8549618320610687,0.9293680297397771
+knn,True,"('hog', 'wavelet_2x')",PCA(n_components=0.99),KNeighborsClassifier(n_neighbors=1),0.9411111111111111,0.865,0.7874015748031497,0.9010989010989012
+knn,True,"('wavelet_3x', 'wavelet_2x')",PCA(n_components=0.9),KNeighborsClassifier(n_neighbors=1),0.93,0.88,0.8032786885245901,0.9136690647482015
+knn,True,"('hog', 'wavelet_3x', 'wavelet_2x')",PCA(n_components=0.95),KNeighborsClassifier(n_neighbors=1),0.94,0.875,0.8,0.9090909090909091
