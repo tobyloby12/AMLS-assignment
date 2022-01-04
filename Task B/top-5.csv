@@ -1,0 +1,6 @@
+,Classifier,Augmented,Features,PCA,Classifier_Metrics,Val accuracy,Test accuracy,Meningioma,No tumor,Glioma,Pituitary
+21,svm,True,"('hog',)",PCA(n_components=0.9),"SVC(C=10, gamma=0.001)",0.911111111,0.935,0.933333333,0.918918919,0.915662651,0.962962963
+4,svm,False,"('hog', 'wavelet_2x')",PCA(n_components=0.95),"SVC(C=10, gamma=0.0001)",0.915555556,0.915,0.892307692,0.921052632,0.873563218,0.971962617
+17,knn,False,"('hog', 'wavelet_3x')",PCA(n_components=0.9),KNeighborsClassifier(n_neighbors=1),0.935555556,0.915,0.897058824,0.931506849,0.880952381,0.953271028
+6,svm,False,"('hog', 'wavelet_3x', 'wavelet_2x')",PCA(n_components=0.95),"SVC(C=10, gamma=0.0001)",0.922222222,0.91,0.885496183,0.909090909,0.88372093,0.962264151
+24,svm,True,"('hog', 'wavelet_3x')",PCA(n_components=100),"SVC(C=10, gamma=0.001)",0.935555556,0.905,0.888888889,0.853333333,0.894117647,0.971428571
