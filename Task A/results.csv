@@ -1,0 +1,87 @@
+,Model,Parameters,Accuracy,f1 no_tumor,f1 tumor,f1_no_tumor,f1_tumor
+0,"False svm ('hog',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.99)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.93,,,0.8781431334622823,0.9508963367108341
+1,"False svm ('hog',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.9)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9355555555555556,,,0.888030888030888,0.9547581903276131
+2,"False svm ('wavelet_3x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.95)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9177777777777778,,,0.8571428571428571,0.9422776911076444
+3,"False svm ('wavelet_2x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.9)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.92,,,0.8506224066390042,0.9453717754172989
+4,"False svm ('hog', 'wavelet_3x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9577777777777777,,,0.9263565891472867,0.9704049844236761
+5,"False svm ('hog', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9422222222222222,,,0.896,0.9600000000000001
+6,"False svm ('wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.9)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9122222222222223,,,0.8336842105263158,0.9403773584905661
+7,"False svm ('hog', 'wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.99)),
+                ('svc', SVC(C=10, gamma=0.0001))])",0.9422222222222222,,,0.8984375,0.9596273291925467
+8,"False random forest ('hog',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=50))])",0.9022222222222223,,,0.8127659574468085,0.9338345864661654
+9,"False random forest ('wavelet_3x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=200))])",0.8611111111111112,,,0.7152619589977222,0.9081557678177811
+10,"False random forest ('wavelet_2x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier())])",0.8611111111111112,,,0.7240618101545254,0.9072011878247958
+11,"False random forest ('hog', 'wavelet_3x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier())])",0.8988888888888888,,,0.8076109936575053,0.9314242652599848
+12,"False random forest ('hog', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=200))])",0.8822222222222222,,,0.771551724137931,0.9206586826347305
+13,"False random forest ('wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=50))])",0.8588888888888889,,,0.7208791208791209,0.9055762081784388
+14,"False random forest ('hog', 'wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier())])",0.8877777777777778,,,0.7818574514038876,0.9244577412116679
+15,"False knn ('hog',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.99)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9511111111111111,,,0.9153846153846152,0.9656249999999998
+16,"False knn ('wavelet_3x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.95)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9333333333333333,,,0.8832684824902723,0.9533437013996889
+17,"False knn ('wavelet_2x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.95)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9266666666666666,,,0.8695652173913043,0.9489953632148378
+18,"False knn ('hog', 'wavelet_3x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('clf', KNeighborsClassifier(n_neighbors=3))])",0.9044444444444445,,,0.8300395256916997,0.9335394126738795
+19,"False knn ('hog', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.95)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9422222222222222,,,0.900383141762452,0.9593114241001565
+20,"False knn ('wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9277777777777778,,,0.8727984344422701,0.9495733126454616
+21,"False knn ('hog', 'wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.95)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9433333333333334,,,0.9024856596558316,0.9600626468285042
+22,"True svm ('hog',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.9)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.94,,,0.8949416342412452,0.9580093312597202
+23,"True svm ('wavelet_3x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.95)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9177777777777778,,,0.8508064516129032,0.9432515337423314
+24,"True svm ('wavelet_2x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9222222222222223,,,0.8594377510040161,0.9462365591397849
+25,"True svm ('hog', 'wavelet_3x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9566666666666667,,,0.923679060665362,0.969743987587277
+26,"True svm ('hog', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9411111111111111,,,0.8933601609657947,0.9593246354566385
+27,"True svm ('wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9166666666666666,,,0.8472505091649696,0.9427043544690603
+28,"True svm ('hog', 'wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=100)),
+                ('svc', SVC(C=10, gamma=0.001))])",0.9355555555555556,,,0.8830645161290323,0.955521472392638
+29,"True random forest ('hog',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=200))])",0.8733333333333333,,,0.7432432432432432,0.9159292035398229
+30,"True random forest ('wavelet_3x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=50))])",0.8544444444444445,,,0.6873508353221958,0.9051412020275162
+31,"True random forest ('wavelet_2x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier())])",0.8555555555555555,,,0.6889952153110049,0.9059334298118669
+32,"True random forest ('hog', 'wavelet_3x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=50))])",0.8755555555555555,,,0.7522123893805309,0.9169139465875371
+33,"True random forest ('hog', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier())])",0.8633333333333333,,,0.7172413793103447,0.9098901098901099
+34,"True random forest ('wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=50))])",0.85,,,0.68384074941452,0.9016751638747268
+35,"True random forest ('hog', 'wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=50)),
+                ('clf', RandomForestClassifier(n_estimators=200))])",0.8766666666666667,,,0.7448275862068965,0.9186813186813186
+36,"True knn ('hog',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.99)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9544444444444444,,,0.9206963249516441,0.9680436477007015
+37,"True knn ('wavelet_3x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.99)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9333333333333333,,,0.8832684824902723,0.9533437013996889
+38,"True knn ('wavelet_2x',)","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.9)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9288888888888889,,,0.873015873015873,0.9506172839506173
+39,"True knn ('hog', 'wavelet_3x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.95)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.96,,,0.9310344827586207,0.971830985915493
+40,"True knn ('hog', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.99)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.9411111111111111,,,0.8970873786407766,0.9587548638132297
+41,"True knn ('wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.9)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.93,,,0.8752475247524752,0.9513513513513512
+42,"True knn ('hog', 'wavelet_3x', 'wavelet_2x')","Pipeline(steps=[('scalar', StandardScaler()), ('pca', PCA(n_components=0.99)),
+                ('clf', KNeighborsClassifier(n_neighbors=1))])",0.94,,,0.8949416342412452,0.9580093312597202
