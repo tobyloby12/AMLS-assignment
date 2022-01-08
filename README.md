@@ -9,6 +9,13 @@ The directories Task A and Task B contain the files necessary to create and trai
 Additional files present include figures used in the report to evaluate the models trained and an initial data exploration file.
 # The role of each file.
 
+## data_explotration.ipynb
+## Task A/main.ipynb
+## Task B/mainBipynb
+## Task B/transfer_learning_Task B.ipynb
+## Task B/transfer_learning_augmented_task_B.ipynb
+## Task B/transfer_learning_evaluation.ipynb
+
 
 
 # How to run your code.
