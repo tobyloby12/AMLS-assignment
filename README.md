@@ -65,6 +65,8 @@ Task B used the same code as in task A however modified for multi-class classifi
 ### Task B
 * Activate the environment created.
 * Run [Task B/mainB.ipynb](Task%20B/mainB.ipynb). This file contains the same code as in [Task A/main.ipynb](Task%20A/main.ipynb) however it has been adapeted for Task B. The key differences include performing data augmentation on the entire dataset, and changing the labels from binary to multiclass.
+
+* For the transfer learning tasks, google colab must be used. The gihub folder can be copied into google drive and then through the notebooks can be mounted. The dataset must also be present as shown in the Organisation of Files section.
 * Run [Task B/transfer_learning_Task B.ipynb](Task%20B/transfer_learning_Task%20B.ipynb). This file was the first transfer learning file created. It contains transfer learning methods and trains 3 models.
 * Run [Task B/transfer_learning_augmented_task_B.ipynb](Task%20B/transfer_learning_augmented_task_B.ipynb). This file is similar to the file above however it has a data augmentation step to evaluate the same models in the file above on a data augmented training set.
 * Run [Task B/transfer_learning_evaluation.ipynb](Task%20B/transfer_learning_evaluation.ipynb). This file was used for the evaluation of the models trained in the two transfer learning files above.
