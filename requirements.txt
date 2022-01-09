@@ -5,6 +5,10 @@ pandas
 sklearn
 opencv-python
 scikit-image
-ipykernal
 tqdm
 tensorflow-gpu
+keras
+imgaug
+ipython
+ipykernel
+PyWavelets

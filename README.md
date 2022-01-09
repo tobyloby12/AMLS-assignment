@@ -43,8 +43,12 @@ Task B used the same code as in task A however modified for multi-class classifi
 * sklearn
 * scipy
 * scikit-image
-* ipykernal
+* ipykernel
 * tqdm
+* keras
+* imgaug
+* ipython
+* PyWavelets
 
 ## How to run the code
 ### Creating environment and installind dependancies
